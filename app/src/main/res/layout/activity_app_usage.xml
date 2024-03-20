@@ -1,21 +1,207 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mainAppUsage"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MapActivity">
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_view" />
+
+    <!-- Rectangle for "Total hrs: 7" positioned at the bottom -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp">
+
+        <!-- TextView for "Total hrs: 7" -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Total hrs: 7"
+            android:textSize="25sp"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="1"
+        android:rowCount="3"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="-80dp"
+        android:layout_below="@+id/top_view">
+
+        <!-- CardView for Instagram -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="15dp"
+            android:layout_margin="12dp"
+            app:cardElevation="12dp">
+
+            <!-- LinearLayout for Instagram content -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <!-- ImageView for Instagram logo -->
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:src="@drawable/instagram_logo"
+                    android:layout_marginStart="-100dp"
+                    android:layout_marginEnd="8dp"/>
+
+                <!-- TextView for Instagram text -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Instagram"
+                    android:layout_marginStart="-100dp"
+                    android:layout_marginEnd="8dp"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <!-- TextView for hrs used -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="hrs used: 2"
+                    android:layout_marginTop="-90dp"
+                    android:textSize="30sp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="8dp"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- CardView for Snapchat -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="15dp"
+            android:layout_margin="12dp"
+            app:cardElevation="12dp">
+
+            <!-- LinearLayout for Snapchat content -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <!-- ImageView for Snapchat logo -->
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:src="@drawable/Snapchat_logo"
+                    android:layout_marginStart="-100dp"
+                    android:layout_marginEnd="8dp"/>
+
+                <!-- TextView for Snapchat text -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Snapchat"
+                    android:layout_marginStart="-95dp"
+                    android:layout_marginEnd="8dp"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <!-- TextView for hrs used -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="hrs used: 1"
+                    android:layout_marginTop="-90dp"
+                    android:textSize="30sp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="8dp"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- CardView for TikTok -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="15dp"
+            android:layout_margin="12dp"
+            app:cardElevation="12dp">
+
+            <!-- LinearLayout for TikTok content -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <!-- ImageView for TikTok logo -->
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:src="@drawable/tiktok_logo"
+                    android:layout_marginStart="-100dp"
+                    android:layout_marginEnd="8dp"/>
+
+                <!-- TextView for TikTok text -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TikTok"
+                    android:layout_marginStart="-100dp"
+                    android:layout_marginEnd="8dp"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <!-- TextView for hrs used -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="hrs used: 4"
+                    android:layout_marginTop="-90dp"
+                    android:textSize="30sp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="8dp"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/mapTitle"
         android:text="App Usage"
+        android:textColor="@color/white"
         android:textSize="36sp"
-        android:layout_marginTop="40dp"
-        android:textColor="@color/black"
-        android:layout_centerHorizontal="true"/>
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
 </RelativeLayout>
