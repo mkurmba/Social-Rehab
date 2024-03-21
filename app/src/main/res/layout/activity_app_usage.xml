@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:id="@+id/appUsage">
 
     <View
         android:id="@+id/top_view"
@@ -114,7 +115,7 @@
                 <ImageView
                     android:layout_width="110dp"
                     android:layout_height="110dp"
-                    android:src="@drawable/Snapchat_logo"
+                    android:src="@drawable/snapchat_logo"
                     android:layout_marginStart="-100dp"
                     android:layout_marginEnd="8dp"/>
 
