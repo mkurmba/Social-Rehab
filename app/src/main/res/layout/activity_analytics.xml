@@ -107,18 +107,3 @@
         </TableLayout>
 
 </LinearLayout>
-                    android:layout_width="198dp"
-                    android:padding="12dp"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:text="Productivity Points" />
-
-                <TextView
-                    android:layout_width="175dp"
-                    android:padding="12dp"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:text="4200" />
-            </TableRow>
-        </TableLayout>
-</RelativeLayout>
