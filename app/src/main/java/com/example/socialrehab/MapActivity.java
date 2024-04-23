@@ -48,7 +48,6 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
                 == PackageManager.PERMISSION_GRANTED) {
             mMap.setMyLocationEnabled(true);
-
             // Request location updates
                         // Add markers for parks (you can replace this with your own park locations)
                         LatLng park1 = new LatLng(43.04173,-76.1271196);
