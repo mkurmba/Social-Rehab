@@ -10,6 +10,12 @@ android {
     namespace = "com.example.socialrehab"
     compileSdk = 34
 
+    configurations {
+        // Exclude JetBrains annotations from being included
+        all {
+            configurations["implementation"].exclude(group = "org.jetbrains", module = "annotations")
+        }
+    }
     defaultConfig {
         applicationId = "com.example.socialrehab"
         minSdk = 24
@@ -42,10 +48,15 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation(libs.places)
+    implementation(libs.play.services.places)
+    implementation(libs.room.compiler)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 }
+
+
 
 secrets {
     // Optionally specify a different file name containing your secrets.

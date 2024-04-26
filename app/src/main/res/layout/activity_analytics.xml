@@ -43,6 +43,7 @@
                     android:padding="12dp"
                     android:textSize="20sp"
                     android:textStyle="bold"
+
                     android:text="Social Media Points" />
 
                 <TextView
@@ -50,7 +51,8 @@
                     android:padding="12dp"
                     android:textSize="20sp"
                     android:textStyle="bold"
-                    android:text="2000" />
+                    android:id="@+id/socialPoints"
+                    android:text="0" />
             </TableRow>
         </TableLayout>
 
@@ -76,7 +78,8 @@
                     android:padding="12dp"
                     android:textSize="20sp"
                     android:textStyle="bold"
-                    android:text="3500" />
+
+                    android:text="0" />
             </TableRow>
         </TableLayout>
 
@@ -102,7 +105,8 @@
                     android:padding="12dp"
                     android:textSize="20sp"
                     android:textStyle="bold"
-                    android:text="4200" />
+                    android:id="@+id/proPoints"
+                    android:text="0" />
             </TableRow>
         </TableLayout>
 

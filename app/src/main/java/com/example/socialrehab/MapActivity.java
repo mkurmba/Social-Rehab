@@ -12,12 +12,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
+import com.google.android.gms.location.places.Place;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+
+import java.util.Arrays;
 
 public class MapActivity extends AppCompatActivity implements OnMapReadyCallback {
     private GoogleMap mMap;
@@ -62,6 +65,8 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                         LatLng park4 = new LatLng(43.035460, -76.121956);
                         mMap.addMarker(new MarkerOptions().position(park4).title("Westminster Park"));
                         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(park4, 15f));
+
+                        // Specify the list of fields to return.
 
         } else {
             // Request location permission if not granted
